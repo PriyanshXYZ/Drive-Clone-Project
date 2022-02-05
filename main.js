@@ -73,13 +73,13 @@
             rname:rname,
             rtype:"text-file",
             pid:cfid,
-            isBold:true,
+            isBold:false,
             isItalic:false,
             isUnderline: false,
-            bgColor: "#000000",
-            textColor: "#ffffff",
+            bgColor: "#ffffff",
+            textColor: "#000000",
             fontFamily:"cursive",
-            fontSize:22,
+            fontSize:12,
             content:"I am new File."
         });
         //html
@@ -116,7 +116,7 @@
             deleteHelper(children[i].rid);//recursive call
         }
         let ridIdx=resources.findIndex(r=>r.rid==fidTBD);
-        console.log(resources[ridIdx].rname);
+        console.log(resources[ridIdx].fname);
         resources.splice(ridIdx,1);
     }
     function deleteTxtFile(){
@@ -327,7 +327,7 @@
         let inputBGColor = divAppMenuBar.querySelector("[action=bg-color]");
         let inputTextColor = divAppMenuBar.querySelector("[action=fg-color]");
         let selectFontFamily = divAppMenuBar.querySelector("[action=font-family]");
-        let selectFontSize =divAppMenuBar.querySelector("[action=fomt-size]");
+        let selectFontSize =divAppMenuBar.querySelector("[action=font-size]");
         let textArea = divAppBody.querySelector("textArea");
 
         resource.isBold= spanBold.getAttribute("pressed") =="true";

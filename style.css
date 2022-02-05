@@ -89,9 +89,9 @@
     height:40px;
 }
 #app-title{
-    width:95%;
+    width:94%;
     text-align: center;
-    border-right: 5px solid red;
+    /* border-right: 5px solid red; */
 }
 #app-menu-bar{
     display:flex;
