@@ -76,8 +76,8 @@
             isBold:true,
             isItalic:false,
             isUnderline: false,
-            bgColor: white,
-            textColor: black,
+            bgColor: "#000000",
+            textColor: "#ffffff",
             fontFamily:"cursive",
             fontSize:22,
             content:"I am new File."
