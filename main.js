@@ -134,7 +134,7 @@
         //html
         divContainer.removeChild(divTxtFile);
         //ram
-        let ridIdx=resources.findIndex(r=>r.pid==fidTBD);
+        let ridIdx=resources.findIndex(r=>r.rid==fidTBD);
         resources.splice(ridIdx,1);
         //storage
         saveChangesToStorage();
